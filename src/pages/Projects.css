@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    min-height: 130rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section {
+    margin-bottom: 20px;
+}
+
+.projects-section {
+    margin-top: 2rem;
+    background: #dfdededa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    font-size: 20px;
+}

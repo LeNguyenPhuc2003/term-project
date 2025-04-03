@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './About.css';
 
 const education = [
   'Bachelor of Computer Science, Dalhousie University (Expected 2026)',

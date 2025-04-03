@@ -1,75 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
+@import "tailwindcss";
+@plugin "daisyui";
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header,
-footer {
-  width: 100%;
-}
-
-header {
-  top: 0;
-  left: 0;
-  padding: 35px 12%;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-nav {
-  background-color: #333;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.custom-toggler {
-  border-color: white !important;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  filter: invert(1);
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-main {
-  padding: 2rem;
-  text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+.clip-amongus {
+  clip-path: polygon(
+    30% 10%, 70% 10%, 85% 25%, 85% 50%, 75% 70%, 75% 85%, 65% 90%,
+    35% 90%, 25% 85%, 25% 70%, 15% 50%, 15% 25%
+  );
 }

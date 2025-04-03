@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './TicTacToe.css';
 
 function TicTacToe() {
     const [board, setBoard] = useState(Array(9).fill(null));

@@ -43,6 +43,9 @@ function Home() {
           <a href="/about" className={`btn ${darkMode ? "dark-mode" : ""}`}>
             About Me
           </a>
+          <a href="/contact" className={`btn ${darkMode ? "dark-mode" : ""}`}>
+            Contact Me
+          </a>
           <a href="/projects" className={`btn ${darkMode ? "dark-mode" : ""}`}>
             Projects
           </a>

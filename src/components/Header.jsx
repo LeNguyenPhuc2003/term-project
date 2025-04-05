@@ -22,7 +22,7 @@ function Header() {
               <ul class="bg-base-100 rounded-t-none p-2">
                 <li>
                   <Link
-                    className="btn btn-ghost text-xl"
+                    className="btn btn-ghost text-base"
                     to="/"
                     style={{ color: "white" }}
                   >
@@ -31,7 +31,7 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    className="btn btn-ghost text-xl"
+                    className="btn btn-ghost text-base"
                     to="/about"
                     style={{ color: "white" }}
                   >
@@ -40,11 +40,20 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    className="btn btn-ghost text-xl"
+                    className="btn btn-ghost text-base"
                     to="/projects"
                     style={{ color: "white" }}
                   >
                     Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="btn btn-ghost text-base"
+                    to="/contact"
+                    style={{ color: "white" }}
+                  >
+                    Contact
                   </Link>
                 </li>
               </ul>

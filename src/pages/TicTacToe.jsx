@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './TicTacToe.css';
 
 function TicTacToe() {
     const [board, setBoard] = useState(Array(9).fill(null));
@@ -45,8 +44,8 @@ function TicTacToe() {
     const status = winner ? `Winner: ${winner}` : `Next player: ${isXNext ? 'X' : 'O'}`;
 
     return (
-        <div className="container" style={{ minHeight: '100vh' }}>
-            <div className="col-md-12 text-section">
+        <div className="grid grid-cols-3 bg-sky-500 min-h-screen place-items-center" style={{ minHeight: '100vh' }}>
+            <div className="col-span-1">
                 <h1 className="mt-5">TicTacToe</h1>
                 <p>{status}</p>
                 <button
@@ -62,7 +61,7 @@ function TicTacToe() {
                     Reset Game
                 </button>
             </div>
-            <div className="board">
+            <div className="board grid grid-cols-3 gap-2">
                 {board.map((value, index) => (
                     <div key={index} className="square" onClick={() => handleClick(index)}>
                         {value}

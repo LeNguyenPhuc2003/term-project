@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import TicTacToe from './pages/TicTacToe';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/tictactoe" element={<TicTacToe />} />
+        <Route path="/contact" element={<Contact/>}/>
         <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 Page */}
       </Routes>
       <Footer />

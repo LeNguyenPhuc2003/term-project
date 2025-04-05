@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Projects.css';
 
 function Projects() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -38,33 +37,33 @@ function Projects() {
   };
 
   return (
-    <div className={`container ${darkMode ? 'dark-mode' : ''}`}>
+    <div className={`bg-linear-to-r from-cyan-500 to-blue-500 pr-4 pl-4 pt-3 ${darkMode ? 'dark-mode' : ''}`}>
       <div className="row">
-        <div className="col-md-12 text-section">
-          <h1 className="mt-5">Projects</h1>
-          <p>Here are some of the projects I have worked on:</p>
+        <div className="">
+          <h1 className="text-5xl"><b>Projects</b></h1>
+          <p className="text-xl">Here are some of the projects I have worked on:</p>
           <button
             onClick={toggleDarkMode}
             className="btn btn-toggle"
             style={{
-              backgroundColor: darkMode ? '#ffffff' : '#333',
-              color: darkMode ? '#333' : '#ffffff'
+              
             }}
           >
             {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           </button>
         </div>
       </div>
-
+      
+      <div className='grid grid-row-3 gap-4 pt-5 pb-4'>
       {projects.map((project, index) => (
         <div key={index} className='projects-section' 
         style={{
-          backgroundColor: darkMode ? '#ffffff' : '#dfdededa',
-          color:'#333'
+          
+          
         }}>
-          <div className="row mt-5">
-            <div className="col-md-12">
-              <h2>{project.title}</h2>
+          <div className="card w-350 bg-blue-900 card-lg shadow-sm">
+            <div className="card-body">
+              <h2 className='card-title'>{project.title}</h2>
               <h5>{project.duration} | {project.type}</h5>
               <h5>Author: {project.author}</h5>
               <ul>
@@ -79,6 +78,8 @@ function Projects() {
           </div>
         </div>
       ))}
+      </div>
+      
     </div>
   );
 }

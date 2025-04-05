@@ -3,43 +3,56 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{ color: "white" }}>
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/" style={{ color: "white" }}>
+    <div className="navbar bg-base-100 shadow-sm">
+      <div className="flex-1">
+        <Link
+          className="btn btn-ghost text-xl"
+          to="/"
+          style={{ color: "white" }}
+        >
           Nguyen Phuc Le
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active" to="/" style={{ color: "white" }}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about" style={{ color: "white" }}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects" style={{ color: "white" }}>
-                Projects
-              </Link>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
+
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-2">
+          <li>
+            <details>
+              <summary className="text-white">Navigation</summary>
+              <ul class="bg-base-100 rounded-t-none p-2">
+                <li>
+                  <Link
+                    className="btn btn-ghost text-xl"
+                    to="/"
+                    style={{ color: "white" }}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="btn btn-ghost text-xl"
+                    to="/about"
+                    style={{ color: "white" }}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="btn btn-ghost text-xl"
+                    to="/projects"
+                    style={{ color: "white" }}
+                  >
+                    Projects
+                  </Link>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
 

@@ -1,16 +1,11 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <nav className="footer-nav">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-      </nav>
-      <hr className="footer-divider" />
-      <p className="footer-text">© 2025 Made by Nguyen Phuc Le</p>
+    <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+      <aside>
+        <p>Copyright © 2025 - Made by Nguyen Phuc Le</p>
+      </aside>
     </footer>
   );
 }

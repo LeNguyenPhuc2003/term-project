@@ -14,7 +14,7 @@ function Header() {
         </Link>
       </div>
 
-      <div class="flex-none">
+      <div class="flex-none fixed top-0 right-0 z-50 ">
         <ul class="menu menu-horizontal px-2">
           <li>
             <details>
